@@ -1,0 +1,26 @@
+<div class="col-md-10">
+  </div> 
+  <h2 align="center">Welcome to GameCity! Your card balance is Rs 600</h2>
+  <div class ="table-responsive table-container">
+      <table class="table" [mfData]="games" #gameData="mfDataTable">
+        <thead>
+          <tr>
+            <th><mfDefaultSorter by="id">Id</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="game_name" >Game name</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="game_price">Price(Rs)</mfDefaultSorter></th>
+          </tr>
+        </thead>
+      
+      
+  <tbody>
+  <tr *ngFor="let gam of gameData.data">
+    <td> {{gam.id}}</td>
+    <td>{{gam.game_name}}</td>
+    <td >{{gam.game_price}}</td>
+    <td>
+      <a href="">
+   PlayNow</a></td>
+</tr>
+</tbody>
+</table>
+</div> 

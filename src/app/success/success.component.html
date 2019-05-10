@@ -1,0 +1,14 @@
+<div class="col-md-10">
+    </div> 
+  <h1>Thank you for playing your balance is Rs{{balance}}</h1>  
+    
+  <tbody>
+        <tr *ngFor="let gam of gameData.data">
+          <td> {{gam.id}}</td>
+          <td>{{gam.game_name}}</td>
+          <td >{{gam.game_price}}</td>
+          <td>
+            <a href="">
+         PlayNow</a></td>
+      </tr>
+      </tbody>
